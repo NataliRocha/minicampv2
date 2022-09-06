@@ -87,7 +87,7 @@ function contar(){
     function verificarC(){
         var num2 = document.getElementById('txt1')
         var primo = Number (num2.value) 
-    
+      varsoma9=0
         if (num2.value.length == 0){
             alert('[ERRO]: Preencha um número!')}
             
@@ -104,21 +104,30 @@ function contar(){
                 resultado = primo % i;
                
                if (resultado==0){
-                cont.innerText= ''
-            return true
+                
+               cont.innerText=''
+                return true
+                
             }  }
             
             
 
             
-              cont.innerText= + primo+ '\u{1F449}'
+              cont.innerText= +primo+ '\u{1F449}'
               return false
 
     
             } }
         
+            
+            var soma10= document.getElementById("cont").innerText
+           if (soma10 ==''){
+            soma9=0
+           
+           }else{
+            var soma9 = parseInt(soma10)
+        }
 
-    
     while (c <= f){
       
 
@@ -129,9 +138,8 @@ if(c==2){
 
 
 
-var soma10=  document.getElementById("cont")
-var soma9= isNaN(soma10)
-var soma11 =0
+
+
 
 
 
@@ -173,16 +181,12 @@ var soma=2
 var soma1 =c
 var soma2 = soma+soma1
 var soma4=soma2+resut
-so.innerHTML= 'A soma destes números é:'+soma4+''
+so.innerHTML= 'A soma destes números é: '+soma4+''
  soma=0
 var resut=soma4-2
 
 }
 else{
-
-    if (soma10=NaN==true){
-        soma9=i
-    }
 
 var soma5 = soma9
 var soma6=c
